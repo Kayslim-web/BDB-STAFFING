@@ -37,7 +37,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// Update
+
 
 // Delete
 router.delete('/:applicationId', async (req, res) => {
@@ -81,6 +81,9 @@ router.get('/:applicationId/edit', async (req, res) => {
     res.redirect('/');
   }
 });
+
+
+// Update
 
 router.put('/:applicationId', async (req, res) => {
   try {
