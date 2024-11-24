@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Add a New App</title>
+  <title>BDB STAFFING</title>
 </head>
   <body>
     <%- include('../partials/_navbar.ejs') %>
@@ -11,7 +11,7 @@
     <form action="/users/<%= user._id %>/applications" method="post">
       <div>
         <label for="company">Company</label>
-        <input type="text" name="company" id="company" placeholder="Enter the company name" required>
+        <input type="text" name="company" id="company" placeholder="Enter company name" required>
       </div>
 
       <div>
@@ -21,7 +21,7 @@
 
       <div>
         <label for="notes">Notes</label>
-        <textarea name="notes" id="notes" cols="30" rows="10" placeholder="Tell me about your application"></textarea>
+        <textarea name="notes" id="notes" cols="30" rows="5" placeholder="Tell me about your application"></textarea>
       </div>
 
       <div>
@@ -41,7 +41,7 @@
         </select>
       </div>
 
-      <button type="submit">Add Application</button>
+      <button type="submit">Submit Application</button>
     </form>
   </body>
 </html>
